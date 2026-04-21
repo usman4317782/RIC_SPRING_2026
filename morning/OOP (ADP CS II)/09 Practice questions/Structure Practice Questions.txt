@@ -1,0 +1,75 @@
+1.
+Create a Student structure with roll number, name, and marks.
+Declare a variable, assign values, and display them.
+
+2.
+Create a structure Book with title, author, and price.
+Initialize it at declaration and print all values.
+
+3.
+Define a structure Employee with id, name, and salary.
+Take input from user and display the data.
+
+4.
+Create a structure Car with brand, model, and year.
+Declare an array of 3 cars and display their details.
+
+5.
+Define a structure Rectangle with length and width.
+Calculate and display area using structure members.
+
+6.
+Create a nested structure Address (city, country) inside Student.
+Assign values and display full student information.
+
+7.
+Modify the previous question to take input for nested structure values from user.
+
+8.
+Create a structure Company that contains:
+
+company name
+nested structure Employee (id, name, salary)
+
+Initialize and display the data.
+
+9.
+Define a nested structure Date (day, month, year) inside Event.
+Initialize an event and display formatted date.
+
+10.
+Create a structure Library with:
+
+book name
+nested Author structure (name, nationality)
+
+Assign and print values.
+
+11.
+Create an enum for Days of the week.
+Assign a day and print its integer value.
+
+12.
+Modify the enum program to use a switch statement to print the actual day name instead of integer.
+
+13.
+Create an enum for Gender and use it inside a Student structure.
+Display gender in readable format (not integer).
+
+14.
+Create a structure Order with:
+
+order ID
+nested Customer structure (name, city)
+enum Status (Pending, Shipped, Delivered)
+
+Initialize and display all details clearly.
+
+15.
+Design a small system for a University Record:
+
+Structure Student
+Nested structure Address
+Enum Program (BSCS, BBA, MBA)
+
+Store data for 2 students, initialize them, and display complete information including program name (not number).

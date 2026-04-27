@@ -1,0 +1,44 @@
+
+1. Define a structure `Student` with name, roll number, and marks. Write a program to input and display one student.
+
+2. Create a structure `Book` with title, author, and price. Print the details.
+
+3. Write a program using a structure `Rectangle` to calculate area and perimeter.
+
+4. Define a structure `Employee` with id and salary. Input and display data for 3 employees.
+
+5. Create a structure `Point` with x and y coordinates. Display the point.
+
+
+6. Write a program to store details of 5 students using an array of structures and display them.
+
+7. Create a structure `Time` (hours, minutes, seconds). Display time in HH:MM:SS format.
+
+8. Define a structure `Distance` (feet, inches). Add two distances.
+
+9. Create a structure `Complex` (real, imaginary). Add two complex numbers.
+
+10. Write a program to find the student with highest marks using structures.
+
+
+11. Create a structure `Car` with brand, model, and price. Sort 5 cars by price.
+
+12. Define a structure `BankAccount` with account number, holder name, and balance. Deposit and withdraw money.
+
+13. Write a program using nested structure:
+    `Student` contains a structure `Address`.
+
+14. Create a structure `Date` and write a program to compare two dates.
+
+15. Use structure with functions: Pass a structure `Employee` to a function and display details.
+
+
+16. Create an array of structures and use pointers to access and display data.
+
+17. Write a program to swap two structures using functions.
+
+18. Define a structure `Product` and calculate total bill for multiple products.
+
+19. Create a structure `Movie` and find the movie with highest rating.
+
+20. Use dynamic memory allocation for structures (using `new`) and store multiple records.

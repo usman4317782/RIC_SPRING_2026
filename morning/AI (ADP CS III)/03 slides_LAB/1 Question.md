@@ -210,8 +210,3 @@ Create a simple vending machine:
 - If the money is enough, give the item and return change; if not enough, ask for more or cancel.
 - Use a loop for the money‑insertion process.
 - Print the final message: item dispensed or transaction cancelled, and the change returned.
-
----
-
-**Happy Coding!**  
-Practice these problems to master input/output, typecasting, loops, and conditional logic in Python.

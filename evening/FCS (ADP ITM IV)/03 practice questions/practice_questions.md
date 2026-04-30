@@ -1,7 +1,4 @@
-```markdown
 # Week 1: Finance for Computer Science – Student Questions
-
-*Based on the Week 1 lecture slides*
 
 ---
 

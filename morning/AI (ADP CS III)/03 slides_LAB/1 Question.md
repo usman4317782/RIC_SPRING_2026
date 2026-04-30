@@ -205,7 +205,7 @@ For a 30‑day month:
 ### Q20. Vending Machine Simulator
 Create a simple vending machine:
 - Display a menu:  
-  `1. Water (₹20)  2. Juice (₹35)  3. Chips (₹25)`
+  `1. Water (Rs.20)  2. Juice (Rs.35)  3. Chips (Rs.25)`
 - Ask the user to choose an item and then insert money (as float).
 - If the money is enough, give the item and return change; if not enough, ask for more or cancel.
 - Use a loop for the money‑insertion process.

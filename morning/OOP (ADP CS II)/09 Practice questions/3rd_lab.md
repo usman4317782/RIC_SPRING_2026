@@ -1,4 +1,3 @@
-```markdown
 # 🧪 C++ Lab Manual  
 ## Topic: Structures, Nested Structures, Variables, and Classes
 
@@ -35,7 +34,7 @@ To learn nested structures.
 **Problem Statement:**  
 Create the following structures:
 
-```cpp
+
 struct Address {
     string city;
     string street;

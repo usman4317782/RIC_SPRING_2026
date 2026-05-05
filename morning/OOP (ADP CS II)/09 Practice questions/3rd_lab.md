@@ -45,7 +45,7 @@ struct Employee {
     string name;
     Address addr;
 };
-```
+
 
 **Tasks:**
 1. Input data for 2 employees.
@@ -82,9 +82,9 @@ Demonstrate the difference between global and local variables.
 
 **Tasks:**
 1. Declare a global variable: 
-   ```cpp
+   
    int count = 10;
-   ```
+
 2. Create a function with a local variable of the same name (`count`).
 3. Print both values.
 4. Observe and explain the output.

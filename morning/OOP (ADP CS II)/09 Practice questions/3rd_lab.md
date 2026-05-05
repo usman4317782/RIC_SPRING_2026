@@ -197,4 +197,3 @@ Create a class `Interest`:
 1. Input values using an object.
 2. Calculate simple interest using the formula: `(P * R * T) / 100`
 3. Display the result.
-```

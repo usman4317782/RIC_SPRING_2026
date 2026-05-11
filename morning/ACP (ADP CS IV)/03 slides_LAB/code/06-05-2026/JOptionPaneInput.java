@@ -10,9 +10,9 @@ public class JOptionPaneInput {
 
         // Display another input dialog box for age
         String ageString = JOptionPane.showInputDialog("Please enter your age:");
-        
+
         // Since showInputDialog returns a String, we must convert it to an integer
-        int age = Integer.parseInt(ageString);
+        int age = Integer.parseInt(ageString);// value -> integer -> float
 
         // Display the result in a message dialog box
         String message = "Welcome, " + name + "!\nYou are " + age + " years old.";

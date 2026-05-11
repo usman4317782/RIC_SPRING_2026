@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class ScannerInput {
     public static void main(String[] args) {
         // Create a Scanner object to read from standard input (console)

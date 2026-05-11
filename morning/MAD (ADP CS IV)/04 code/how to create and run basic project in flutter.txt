@@ -1,0 +1,3 @@
+flutter create --platforms web flutter_web_basics
+
+flutter run -d chrome

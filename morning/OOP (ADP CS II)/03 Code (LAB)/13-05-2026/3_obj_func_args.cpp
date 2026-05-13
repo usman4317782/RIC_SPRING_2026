@@ -8,25 +8,17 @@ class Point{
         int x;
         int y;
 
-        void display(Point point){
-            cout << "Point(" << x << ", " << y << ")" << endl;
-        }
 };
-
-    public: 
-    string name;
-    string address;
-    int age;
-
-    void start();
+void display(Point point){
+    cout << "Point(" << point.x << ", " << point.y << ")" << endl;
 }
+
 int main()
 {
-    Point p();
-    p.x;
-    p.y;
-    // p.display(p);
-    // Car car1;
-    // car1.brand = "Toyota";
+    int firstNumber, secondNumber;
+    cout << "Enter first and second number";
+    cin >> firstNumber >> secondNumber; 
+
+    Point point = {firstNumber, secondNumber};
     return 0;
 }

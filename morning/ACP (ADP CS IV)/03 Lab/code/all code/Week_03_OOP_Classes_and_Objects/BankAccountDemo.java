@@ -29,19 +29,20 @@ class BankAccount {
 
     // Withdraw method
     public void withdraw(double amount) {
-        if (amount > 0 && amount <= balance) {
-            balance -= amount;
-            System.out.printf("Successfully withdrew $%.2f. New Balance: $%.2f\n", amount, balance);
+        if (amount <= 0) {
+            // Bug fix: check for invalid amount FIRST before comparing with balance
+            System.out.println("Invalid withdrawal amount. Must be greater than zero.");
         } else if (amount > balance) {
-            System.out.println("Error: Insufficient balance. Withdrawal failed.");
+            System.out.printf("Error: Insufficient balance ($%.2f). Cannot withdraw $%.2f.%n", balance, amount);
         } else {
-            System.out.println("Invalid withdrawal amount.");
+            balance -= amount;
+            System.out.printf("Successfully withdrew $%.2f. New Balance: $%.2f%n", amount, balance);
         }
     }
 
     // Check balance
     public void displayAccountInfo() {
-        System.out.printf("Account Holder: %s | Account No: %s | Current Balance: $%.2f\n", 
+        System.out.printf("Account Holder: %-15s | Account No: %-8s | Current Balance: $%.2f%n",
                 accountHolderName, accountNumber, balance);
     }
 }

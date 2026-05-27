@@ -47,6 +47,12 @@ class Student {
     public void setAge(int age) {
         this.age = age;
     }
+
+    // Best practice: override toString() so printing the object gives meaningful output
+    @Override
+    public String toString() {
+        return "Student{name='" + name + "', rollNo='" + rollNo + "', age=" + age + "}";
+    }
 }
 
 public class StudentDemo {
@@ -71,5 +77,11 @@ public class StudentDemo {
         
         System.out.println("Modified Details of s3:");
         s3.displayDetails();
+
+        // Demonstrating toString() - called automatically when object is used in String context
+        System.out.println("\nUsing toString() (auto-called by println):");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
     }
 }

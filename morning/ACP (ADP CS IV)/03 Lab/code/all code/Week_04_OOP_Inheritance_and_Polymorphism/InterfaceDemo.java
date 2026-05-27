@@ -44,12 +44,16 @@ class SmartCar implements Drivable, GPSNavigator {
             System.out.println("Cannot accelerate. Start the engine first.");
             return;
         }
-        currentSpeed += speed;
-        if (currentSpeed > SPEED_LIMIT) {
-            System.out.println("Warning: Exceeded Speed Limit (" + SPEED_LIMIT + " km/h)!");
+        int attemptedSpeed = currentSpeed + speed;
+        if (attemptedSpeed > SPEED_LIMIT) {
+            // Bug fix: show the attempted speed so the warning is informative
+            System.out.printf("Warning: Attempted %d km/h exceeds Speed Limit (%d km/h)! Capped.%n",
+                    attemptedSpeed, SPEED_LIMIT);
             currentSpeed = SPEED_LIMIT;
+        } else {
+            currentSpeed = attemptedSpeed;
         }
-        System.out.println(model + " accelerated to " + currentSpeed + " km/h.");
+        System.out.println(model + " is now travelling at " + currentSpeed + " km/h.");
     }
 
     @Override

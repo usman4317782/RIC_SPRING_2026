@@ -19,7 +19,8 @@ abstract class Employee {
 
     // Concrete method - shared logic for all employees
     public void displayBasicInfo() {
-        System.out.println("Employee ID: " + id + " | Name: " + name + " | Base Salary: $" + baseSalary);
+        // Bug fix: use String.format so baseSalary prints as $5,000.00 not $5000.0
+        System.out.printf("Employee ID: %d | Name: %-10s | Base Salary: $%,.2f%n", id, name, baseSalary);
     }
 
     // Abstract method - subclasses must implement specific salary calculation logic
@@ -48,7 +49,9 @@ class PartTimeEmployee extends Employee {
     private double hourlyRate;
 
     public PartTimeEmployee(String name, int id, int hoursWorked, double hourlyRate) {
-        super(name, id, 0); // Part-time might have 0 base salary and earn purely hourly
+        // Bug fix: base salary is 0 because part-time employees earn purely by hours
+        // hoursWorked * hourlyRate is their full pay — no fixed base
+        super(name, id, 0.0);
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
     }

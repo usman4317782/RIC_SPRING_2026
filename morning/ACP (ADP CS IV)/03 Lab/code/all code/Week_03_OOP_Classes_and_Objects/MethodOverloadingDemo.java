@@ -8,15 +8,17 @@
 class AreaCalculator {
     
     // 1. Overloaded method to calculate area of a square (1 integer parameter)
+    // Bug fix: cast to double to prevent int overflow for large values and express intent
     public double calculateArea(int side) {
         System.out.println("Calculating area of Square (int side):");
-        return side * side;
+        return (double) side * side;
     }
     
     // 2. Overloaded method to calculate area of a rectangle (2 integer parameters)
+    // Bug fix: cast to double to prevent int overflow and maintain consistent return type
     public double calculateArea(int length, int width) {
         System.out.println("Calculating area of Rectangle (int length, int width):");
-        return length * width;
+        return (double) length * width;
     }
     
     // 3. Overloaded method to calculate area of a circle (1 double parameter)

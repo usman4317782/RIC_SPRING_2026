@@ -1,0 +1,59 @@
+# ==========================================
+# ACP Lab Tasks - Git Ignore Configuration
+# ==========================================
+
+# Compiled Java class files
+*.class
+**/*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+# Exception: Keep sqlite-jdbc driver in lib folder tracked if desired, 
+# but ignore other generated JAR files.
+!lib/*.jar
+
+# SQLite Database Files & Journals
+*.db
+*.db-journal
+*.sqlite
+acp_lab.db
+week 10/acp_lab.db
+week 11/acp_lab.db
+week 16/acp_lab.db
+
+# Dynamic Program Output Data Files
+contacts.dat
+numbers.txt
+week 5/numbers.txt
+week 6/contacts.dat
+
+# Verification Log Files
+*-err.log
+*-out.log
+*.log
+
+# Generated Documentation (JavaDoc)
+week 15/doc/
+doc/
+
+# IDE Specific Files and Folders
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+*.iml
+*.iws
+*.ipr
+.nbproject/
+build/
+bin/
+out/
+target/
+
+# OS-specific files
+Thumbs.db
+desktop.ini
+.DS_Store

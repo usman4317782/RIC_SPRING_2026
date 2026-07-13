@@ -1,0 +1,68 @@
+*Dear Students,*
+Your practical assignment for the **Multimedia Production** course has been assigned.
+
+**Assignment Title:**
+*Designing a Mobile Learning Application Based on Mayer's Multimedia Learning Principles*
+
+**Objective:**
+Design a modern educational mobile application prototype using **Google Stitch**. Your design should demonstrate the practical implementation of **Richard E. Mayer's Multimedia Learning Principles** to create an engaging, effective, and learner-centered multimedia experience.
+
+**Scenario:**
+You have been hired as a Multimedia Designer by an EdTech company to develop the interface of a mobile learning application for university students. Your primary objective is not only to create an attractive UI but also to ensure that every screen follows Mayer's principles to enhance learning while minimizing cognitive load.
+
+Your prototype should clearly demonstrate the appropriate use of principles such as:
+• Multimedia Principle
+• Coherence Principle
+• Signaling Principle
+• Spatial Contiguity Principle
+• Temporal Contiguity Principle
+• Segmenting Principle
+• Pre-training Principle
+• Modality Principle
+• Redundancy Principle
+• Personalization Principle
+• Voice Principle (where applicable)
+• Image Principle (where applicable)
+
+**Minimum Required Screens:**
+• Splash Screen
+• Onboarding
+• Login / Sign Up
+• Home Dashboard
+• Course List
+• Lesson Content
+• Interactive Learning Screen
+• Quiz Screen
+• Progress Dashboard
+• Profile
+• Settings
+• Help & Support
+
+You are encouraged to include animations, illustrations, icons, learning progress indicators, interactive navigation, and other multimedia elements that support learning without causing unnecessary distraction.
+
+**Submission Requirements:**
+
+1. Google Stitch project link.
+2. PDF containing all designed screens.
+3. Prototype link (if available).
+4. A brief report (2–3 pages) explaining:
+
+   * The design concept.
+   * Which Mayer's Multimedia Learning Principles were applied.
+   * How each principle was implemented in your design.
+   * How your design reduces cognitive load and improves the learning experience.
+
+**Evaluation Criteria:**
+• Application of Mayer's Multimedia Learning Principles.
+• User Interface (UI) Design.
+• User Experience (UX).
+• Creativity and Innovation.
+• Navigation and Consistency.
+• Professional Presentation.
+• Documentation Quality.
+
+**Last Date of Submission:** *15-07-2026*
+
+Late submissions will be accepted only according to the course policy.
+
+*Best of luck, and remember that the focus of this assignment is evidence-based multimedia design, not just visual appearance.*

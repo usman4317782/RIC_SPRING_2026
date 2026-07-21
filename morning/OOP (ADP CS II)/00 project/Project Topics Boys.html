@@ -1,0 +1,448 @@
+
+<h2 class="sr-only">Advanced C++ OOP Project assignments for 16 ADP Computing students with graphics details for each project.</h2>
+<style>
+  .wrap { padding: 1rem 0 2rem; font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 14px; }
+  .card { background: var(--surface-2); border: 0.5px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0; }
+  .card-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+  .icon-wrap { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+  .meta { flex: 1; min-width: 0; }
+  .roll { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
+  .sname { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+  .section { border-top: 0.5px solid var(--border); padding-top: 9px; margin-top: 9px; }
+  .sec-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 5px; }
+  .ptitle { font-size: 13px; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
+  .desc { font-size: 12px; color: var(--text-secondary); line-height: 1.6; }
+  .gfx-box { background: var(--surface-1); border: 0.5px solid var(--border); border-radius: 8px; padding: 8px 10px; margin-top: 0; }
+  .gfx-title { font-size: 11px; font-weight: 500; color: var(--text-primary); display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+  .gfx-desc { font-size: 11px; color: var(--text-secondary); line-height: 1.55; }
+  .gfx-lib { font-family: var(--font-mono); font-size: 10px; display: inline-flex; align-items: center; gap: 4px; margin-top: 5px; padding: 2px 7px; border-radius: 5px; background: #E1F5EE; color: #085041; }
+  @media (prefers-color-scheme: dark) { .gfx-lib { background: #04342C; color: #9FE1CB; } }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
+  .tag { font-family: var(--font-mono); font-size: 10px; padding: 2px 7px; border-radius: 5px; }
+  .t1 { background: #EEEDFE; color: #3C3489; }
+  .t2 { background: #E1F5EE; color: #085041; }
+  .t3 { background: #FAEEDA; color: #633806; }
+  .t4 { background: #FAECE7; color: #712B13; }
+  .t5 { background: #E6F1FB; color: #0C447C; }
+  @media (prefers-color-scheme: dark) {
+    .t1 { background: #26215C; color: #CECBF6; }
+    .t2 { background: #04342C; color: #9FE1CB; }
+    .t3 { background: #412402; color: #FAC775; }
+    .t4 { background: #4A1B0C; color: #F5C4B3; }
+    .t5 { background: #042C53; color: #B5D4F4; }
+  }
+  .diff { font-size: 10px; font-family: var(--font-mono); padding: 2px 8px; border-radius: 99px; flex-shrink: 0; align-self: flex-start; margin-top: 2px; }
+  .hard { background: #FCEBEB; color: #A32D2D; }
+  .adv  { background: #FAEEDA; color: #854F0B; }
+  @media (prefers-color-scheme: dark) {
+    .hard { background: #501313; color: #F7C1C1; }
+    .adv  { background: #412402; color: #FAC775; }
+  }
+</style>
+
+<div class="wrap">
+  <div class="grid">
+
+    <!-- 1 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#EEEDFE;"><i class="ti ti-brain" style="color:#534AB7" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4549 · M. Bilal</div>
+          <div class="sname">Autonomous Fault-Tolerant PLC Simulator</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Programmable Logic Controller Engine</div>
+        <div class="desc">Simulates a real industrial PLC with ladder logic interpreter, I/O module classes, watchdog timer, and fault recovery. User writes ladder rungs as config; engine evaluates them in scan cycles. Models coil/contact logic, timers, counters, and emergency stop routines exactly as in Siemens/Allen-Bradley PLCs.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#534AB7" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Render a live ASCII ladder diagram in the console showing rung states (contacts open/closed, coils energized). Use <code>winbgi</code> or <code>SFML</code> to draw a color-coded ladder rung grid — green for energized paths, red for open. I/O panel on the right shows real-time bit states as colored squares updating each scan cycle.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> ASCII + SFML optional</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Interpreter Pattern</span><span class="tag t2">Industrial Auto</span><span class="tag t3">Scan Cycle</span></div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#E1F5EE;"><i class="ti ti-satellite" style="color:#0F6E56" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4550 · Ali Azam</div>
+          <div class="sname">Satellite Telemetry Ground Station</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Real-Time Satellite Data Parser & Monitor</div>
+        <div class="desc">Simulates a ground control station receiving telemetry packets from a LEO satellite. Packet class encodes CCSDS frame format. TelemetryParser decodes sensor payloads (attitude, power, thermal). AnomalyDetector identifies out-of-bound values and triggers command uplink simulation. Models actual ground station software used by CubeSat teams.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#0F6E56" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to draw a scrolling telemetry dashboard: a circular orbit diagram showing satellite position updating in real time, live line charts for power and thermal channels, and a packet log panel. Flashing red alerts when anomalies are detected make it feel exactly like a real Mission Control screen.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML / winbgi</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">CCSDS Protocol</span><span class="tag t5">Space IoT</span><span class="tag t2">Packet Parsing</span></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#FAEEDA;"><i class="ti ti-cpu" style="color:#854F0B" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4552 · Mubeen Ali</div>
+          <div class="sname">RTOS Task Scheduler Simulator</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Real-Time Operating System Kernel Engine</div>
+        <div class="desc">Builds a mini RTOS kernel in C++ with Task, Scheduler, Semaphore, and MessageQueue classes. Implements preemptive priority scheduling and round-robin. Tasks have deadlines, execution bursts, and I/O waits. Scheduler resolves priority inversion via priority inheritance. Mirrors FreeRTOS/Zephyr internals.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#854F0B" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Render a live <strong>Gantt chart</strong> in the console using block characters (█ ░) showing each task's execution timeline across time slots. Color-coded rows per task (using ANSI codes). A second panel shows the ready queue as a priority-ordered list that updates each tick. This is the single most impressive visual a scheduler project can produce.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> ANSI Console / winbgi</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">OS Concepts</span><span class="tag t3">Scheduling Algo</span><span class="tag t4">Embedded RTOS</span></div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#FAECE7;"><i class="ti ti-heart-rate-monitor" style="color:#993C1D" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4553 · Abdul Subhan</div>
+          <div class="sname">ECG Signal Processing & Arrhythmia Detector</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Wearable Cardiac Monitor Firmware Simulation</div>
+        <div class="desc">Simulates firmware of a wearable ECG patch. ECGSensor generates synthetic waveforms (P-Q-R-S-T peaks). SignalFilter applies moving-average noise reduction. BeatDetector uses threshold-based R-peak detection. ArrhythmiaClassifier identifies AFib, bradycardia, and tachycardia. Produces annotated beat logs — models actual AliveCor/Holter device logic.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#993C1D" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>winbgi</code> or <code>SFML</code> to draw a scrolling ECG waveform in real time — exactly like a hospital bedside monitor. R-peaks are marked with a vertical red line and BPM counter. A status bar at the bottom shows current rhythm classification (Normal / AFib / Brady) with color change. This alone makes the project look professional grade.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> winbgi / SFML</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">DSP Simulation</span><span class="tag t5">Wearable IoT</span><span class="tag t4">Pattern Detection</span></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#E6F1FB;"><i class="ti ti-drone" style="color:#185FA5" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4554 · Ahmad Amir</div>
+          <div class="sname">Drone Flight Controller & Mission Planner</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Autonomous UAV Navigation Engine</div>
+        <div class="desc">Simulates a quadcopter flight controller with IMU, Barometer, GPS, and ESC classes. PIDController stabilizes roll/pitch/yaw. MissionPlanner parses waypoint files and executes autonomous flight paths. Collision avoidance checks a simulated obstacle map. Battery management triggers return-to-home. Mirrors ArduPilot/PX4 autopilot architecture.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#185FA5" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to render a top-down 2D map view showing the drone's position as a moving icon following waypoints. Obstacles rendered as rectangles. A side HUD panel shows altitude, speed, battery %, and current PID outputs as live bar gauges. Waypoints connect with dashed lines. Flight path history trails behind the drone icon.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML 2D</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">PID Control</span><span class="tag t5">UAV IoT</span><span class="tag t2">Waypoint Nav</span></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#EEEDFE;"><i class="ti ti-shield-lock" style="color:#534AB7" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4555 · Sarim</div>
+          <div class="sname">Industrial ICS/SCADA Intrusion Detection</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Cyber-Physical Security Monitor for OT Networks</div>
+        <div class="desc">Simulates a SCADA network with PLCNode, HMI, HistorianServer, and RTU classes communicating via Modbus protocol frames. IntrusionDetector analyzes traffic for replay attacks, unauthorized writes, and protocol violations. Blacklist/whitelist managers control access. Generates incident reports. Models real ICS cybersecurity threats in pure software.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#534AB7" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Render a live network topology diagram using <code>SFML</code> — nodes (PLC, HMI, RTU) as labeled circles connected by animated data-flow lines. Suspicious traffic turns connection lines red and flashes the affected node. A scrolling attack log panel on the side shows timestamped incidents. Looks identical to a real SOC (Security Operations Center) dashboard.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML / ASCII art</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Modbus Protocol</span><span class="tag t4">OT Security</span><span class="tag t3">Anomaly Detection</span></div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#E1F5EE;"><i class="ti ti-topology-star-3" style="color:#0F6E56" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4568 · M. Uzair</div>
+          <div class="sname">Mesh IoT Network Protocol Simulator</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">LoRaWAN / Zigbee Mesh Network Engine</div>
+        <div class="desc">Simulates a multi-hop mesh IoT network with EndNode, Router, Gateway, and NetworkServer classes. Each node has RSSI, battery, and routing table. RoutingEngine implements Dijkstra-based shortest path. Simulates packet loss, duty cycles, and ACK retries. Generates network topology maps and link-quality heatmaps. Models real LoRaWAN/Zigbee firmware behavior.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#0F6E56" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to draw the mesh topology as a force-directed graph — nodes as circles positioned on a 2D plane, edges colored by RSSI strength (green = strong, yellow = weak, red = lost). Animate packet hops as a moving dot along the shortest path. A link-quality heatmap overlay renders in the background. Dead nodes turn gray with an X icon.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML graph viz</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t2">Mesh Routing</span><span class="tag t5">LoRaWAN</span><span class="tag t1">Dijkstra</span></div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#FAEEDA;"><i class="ti ti-chart-histogram" style="color:#854F0B" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4569 · M. Usman</div>
+          <div class="sname">Predictive Maintenance Engine for CNC Machines</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Industry 4.0 Machine Health Prognostics System</div>
+        <div class="desc">Simulates CNC machine sensors (vibration, spindle load, tool wear, temperature). FeatureExtractor computes RMS, kurtosis, and FFT peak from vibration time-series. PrognosticsEngine predicts Remaining Useful Life (RUL) using a degradation model. MaintenanceScheduler plans downtime before failure. Produces health score trends and work-order reports.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#854F0B" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>winbgi</code> to render a 4-panel dashboard: scrolling vibration waveform, tool wear degradation curve with a projected RUL deadline marked in red, a health score gauge (0–100%), and a maintenance calendar grid. As RUL drops below threshold the gauge turns red and the screen flashes a maintenance alert. Makes the project feel exactly like an industrial HMI screen.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> winbgi / SFML</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t3">RUL Prediction</span><span class="tag t2">Industry 4.0</span><span class="tag t1">Signal Features</span></div>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#FAECE7;"><i class="ti ti-binary-tree" style="color:#993C1D" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4570 · Syed Izhan</div>
+          <div class="sname">Blockchain-Based IoT Device Registry</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Decentralized Device Identity & Audit Chain</div>
+        <div class="desc">Implements a simplified blockchain in C++ where each Block stores IoT device telemetry events. Block class contains hash, previous hash, timestamp, and payload. ChainValidator detects tampered blocks. SmartContract enforces device access policies. Mining difficulty adjustable. Models real IOTA/Ethereum-based IoT identity platforms entirely in C++.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#993C1D" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Render the chain as a horizontal row of linked block rectangles using <code>SFML</code> or <code>winbgi</code>. Each block shows its short hash, timestamp, and payload summary. When a block is tampered, it and all subsequent blocks turn red with broken chain links. Mining animation shows a progress bar while the nonce is computed. Instantly makes blockchain concepts visual and tangible.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> winbgi / SFML</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Blockchain OOP</span><span class="tag t4">IoT Security</span><span class="tag t2">Merkle Hash</span></div>
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#E6F1FB;"><i class="ti ti-robot" style="color:#185FA5" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4571 · Hanan Amin</div>
+          <div class="sname">Robotic Arm Inverse Kinematics Simulator</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">6-DOF Industrial Robot Motion Planner</div>
+        <div class="desc">Simulates a 6-axis robotic arm with Joint and Link classes storing DH parameters. ForwardKinematics computes end-effector position from joint angles. InverseKinematics solver uses iterative Jacobian transpose method to reach target XYZ. TrajectoryPlanner generates smooth motion curves. Workspace collision detection included. Mirrors KUKA/FANUC robot controller software.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#185FA5" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to draw the robotic arm as a 2D kinematic chain — each link as a thick colored line segment, each joint as a circle. As IK solver runs, the arm animates smoothly toward the target point (shown as a crosshair). Workspace boundary rendered as a shaded arc. Joint angle values displayed in a side panel. This is the most visually impressive project in the list.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML 2D animation</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Kinematics Math</span><span class="tag t5">Robotics IoT</span><span class="tag t3">DH Parameters</span></div>
+    </div>
+
+    <!-- 11 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#EEEDFE;"><i class="ti ti-windmill" style="color:#534AB7" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4572 · Ahtasham</div>
+          <div class="sname">Digital Twin Engine for Wind Turbines</div>
+        </div>
+        <span class="diff adv">High</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Live Wind Farm Digital Twin with SCADA</div>
+        <div class="desc">Builds a digital twin of a wind turbine farm. Turbine class models rotor RPM, blade pitch, nacelle yaw, gearbox, and generator objects. PhysicsEngine computes power output from wind speed using Betz law. SCADAController adjusts pitch and yaw for optimal yield. FaultInjector simulates bearing failures, icing, and grid faults.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#534AB7" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to animate rotating turbine blade icons on a farm grid layout. Rotation speed of each icon matches the simulated RPM. Color overlay shows per-turbine power output (green = optimal, amber = derated, red = fault). Wind direction rendered as animated arrow. Live power generation bar chart updates at the bottom. Faulty turbines show a warning icon and stop spinning.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML animation</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Digital Twin</span><span class="tag t2">Energy IoT</span><span class="tag t3">Betz Law Physics</span></div>
+    </div>
+
+    <!-- 12 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#E1F5EE;"><i class="ti ti-scan" style="color:#0F6E56" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4574 · Fahar Shabir</div>
+          <div class="sname">LiDAR Point Cloud Mapping Engine</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Autonomous Vehicle Perception & SLAM Simulator</div>
+        <div class="desc">Simulates a LiDAR sensor generating 2D point clouds of a virtual environment. PointCloud class stores polar-to-Cartesian scan data. OccupancyGrid builds a map from scan accumulations. SLAM engine updates robot position and map iteratively using ICP-like scan matching. ObstacleDetector classifies clusters as objects.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#0F6E56" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to render the occupancy grid as a 2D top-down map — free cells white, occupied cells dark, unknown cells gray. LiDAR scan rays animate outward from the robot's position each frame. Detected obstacle clusters highlighted with bounding boxes. The robot icon moves and the map builds progressively. This is exactly what ROS's RViz looks like — highly impressive for a demo.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML 2D map render</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">SLAM Algorithm</span><span class="tag t5">Autonomous Vehicle</span><span class="tag t4">Point Cloud</span></div>
+    </div>
+
+    <!-- 13 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#FAEEDA;"><i class="ti ti-network" style="color:#854F0B" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4575 · Abdullah Khan</div>
+          <div class="sname">5G Network Slice Resource Orchestrator</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Telecom Network Slicing & QoS Simulator</div>
+        <div class="desc">Simulates 5G network slicing for eMBB (broadband), URLLC (low latency), and mMTC (IoT devices). NetworkSlice manages bandwidth, latency SLA, and device quota. ResourceOrchestrator dynamically reallocates RAN resources under load. SliceViolationDetector flags SLA breaches. UE devices generate traffic patterns. Models real O-RAN open architecture concepts.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#854F0B" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Render three horizontal bandwidth lanes (one per slice) using <code>SFML</code> or <code>winbgi</code> — like a live network traffic monitor. Each lane shows a scrolling throughput bar and a latency gauge needle. When SLA is breached the lane border turns red and a violation counter increments. A device count panel shows active UEs per slice. Looks identical to a real telecom NOC dashboard.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML / winbgi</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">5G Slicing</span><span class="tag t5">Telecom IoT</span><span class="tag t3">QoS Engine</span></div>
+    </div>
+
+    <!-- 14 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#FAECE7;"><i class="ti ti-shield-half" style="color:#993C1D" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4576 · Alaudin Khan</div>
+          <div class="sname">Hardware Security Module (HSM) Emulator</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Cryptographic Key Vault & Secure Enclave Sim</div>
+        <div class="desc">Emulates an HSM used in banking and IoT. KeyStore manages RSA/AES key lifecycle (generation, rotation, revocation). SecureEnclave restricts key usage via access control lists. AuditLogger tamper-proofs all operations with chained hashes. Simulates PIN verification, signing ceremonies, and dual-control policies. Models real Thales/nCipher HSM behavior.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#993C1D" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>winbgi</code> to render a secure terminal UI — a black screen with green monospace text (Matrix-style) showing live key operations. Each cryptographic operation animates character-by-character. A tamper event flashes the screen red and shows a chain-broken icon. Key vault visualized as a grid of locked/unlocked padlock icons. Dual-control operations show two operator prompts side by side.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> ANSI + winbgi</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Crypto OOP</span><span class="tag t4">Hardware Security</span><span class="tag t2">Key Management</span></div>
+    </div>
+
+    <!-- 15 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#E6F1FB;"><i class="ti ti-charging-pile" style="color:#185FA5" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4577 · Aewn Haider</div>
+          <div class="sname">EV Charging Network Management System</div>
+        </div>
+        <span class="diff adv">High</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">OCPP-Based Smart EV Charging Orchestrator</div>
+        <div class="desc">Simulates an EV charging network using OCPP message classes. ChargingStation objects manage sessions, meter readings, and connector states. CentralSystem handles authorization, billing, and load balancing. SmartCharging implements dynamic power scheduling to prevent grid overload. Generates OCPP transaction logs. Models real ChargePoint/Wallbox backend architecture.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#185FA5" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>SFML</code> to render a station map — charging point icons change color (gray = idle, green = charging, red = faulted, yellow = reserved). A live power gauge per station shows kW delivery. Total grid load meter at the top turns amber/red near capacity. Active session cards show vehicle battery % rising in real time as a fill animation. Looks like the Zaptec or Charge Amps operator app.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> SFML station map</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">OCPP Protocol</span><span class="tag t5">EV IoT</span><span class="tag t3">Load Balancing</span></div>
+    </div>
+
+    <!-- 16 -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-wrap" style="background:#EEEDFE;"><i class="ti ti-microscope" style="color:#534AB7" aria-hidden="true"></i></div>
+        <div class="meta">
+          <div class="roll">Roll 4531 · M. Ahmad</div>
+          <div class="sname">Lab-on-Chip Microfluidics Controller</div>
+        </div>
+        <span class="diff hard">Advanced</span>
+      </div>
+      <div class="section">
+        <div class="sec-label">PROJECT DETAILS</div>
+        <div class="ptitle">Point-of-Care Diagnostic Device Firmware Sim</div>
+        <div class="desc">Simulates firmware for a microfluidic diagnostic chip (PCR / blood glucose analyzer). MicrofluidicChannel models fluid flow rates and reagent mixing. ThermalCycler runs precise temperature programs (denaturation, annealing, extension). DetectorArray reads simulated optical absorbance signals. DiagnosticEngine classifies results (Positive/Negative/Invalid). Models real Cepheid PoC device firmware.</div>
+      </div>
+      <div class="section">
+        <div class="gfx-box">
+          <div class="gfx-title"><i class="ti ti-layout-grid" style="font-size:14px;color:#534AB7" aria-hidden="true"></i> Graphics Output</div>
+          <div class="gfx-desc">Use <code>winbgi</code> to animate the chip layout — microchannels as thin lines with a colored fluid blob moving through them as the assay progresses. ThermalCycler stage shown as a live temperature curve graph with target zones marked. DetectorArray rendered as a grid of wells changing color from clear to yellow/red based on absorbance. Final result flashes POSITIVE or NEGATIVE in large bold text.</div>
+          <span class="gfx-lib"><i class="ti ti-terminal" aria-hidden="true"></i> winbgi animation</span>
+        </div>
+      </div>
+      <div class="tags"><span class="tag t1">Biomedical IoT</span><span class="tag t4">Thermal Control</span><span class="tag t2">Firmware Sim</span></div>
+    </div>
+
+  </div>
+</div>
